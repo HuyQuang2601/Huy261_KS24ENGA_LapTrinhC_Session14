@@ -1,19 +1,18 @@
 #include <stdio.h>
+#include <string.h>
 
-int main() {
-    char chuoi[] = "Hello World 123!";
-    int dem = 0;
-    int i = 0;
-
-    while (chuoi[i] != '\0') {
-        if ((chuoi[i] >= 'a' && chuoi[i] <= 'z') || (chuoi[i] >= 'A' && chuoi[i] <= 'Z')) {
-            dem++;
-        }
-        i++;
-    }
-
-    printf("So ky tu la chu cai trong chuoi: %d\n", dem);
-
-    return 0;
+void arr(){
+	char a[20]="huasydbqj";
+	int cnt=0;
+	for(int i=0; i<strlen(a);i++){
+	
+		if(a[i]>='a' && a[i]<='z') ++cnt;
+		if(a[i]>='A' && a[i]<='Z') ++cnt;
+}
+printf("So ky tu la chu cai trong mang la %d", cnt);
+}
+int main (){
+	arr();
+	return 0;
 }
 
